@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function convert_mbox_to_master_pdf_setup() {
+	__info "setting up convert_mbox_to_master_pdf"
+
+	cd "$__convert_mbox_to_master_pdf_library_path/"
+
+	echo "$PWD"
+
+	__success "setting up convert_mbox_to_master_pdf"
+}
+
+register_handler "convert_mbox_to_master_pdf" "convert_mbox_to_master_pdf_setup"
